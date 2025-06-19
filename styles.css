@@ -19,11 +19,12 @@ body, html {
   top: 0;
   left: 0;
   right: 0;
+   height: 60px;
   z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.2rem;
+  padding: 0.6rem 1rem;
   background-color: #111;
   flex-wrap: wrap;
 }
@@ -41,28 +42,28 @@ body, html {
 }
 
 .logo-name {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: #00aaff;
   margin-right: 0.3rem;
 }
 
 .logo-tech {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: #ffffff;
 }
 
 .tagline {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #cccccc;
-  margin-top: 0.2rem;
+  margin-top: 0.1rem;
 }
 
 /* Navigation Links */
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.2rem;
   flex-wrap: wrap;
 }
 
@@ -82,7 +83,7 @@ body, html {
   display: inline-block;
   background-color: #00aaff;
   color: #fff;
-  padding: 0.6rem 1.2rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
@@ -101,37 +102,35 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem 2rem 4rem;
+  padding: 60px 2rem 3rem; /* top padding equal to navbar height */
   background: linear-gradient(135deg, #000000 0%, #001f33 40%, #0077cc 100%);
-  min-height: 100vh;
+  min-height: calc(100vh - 60px); /* adjust to exclude navbar height */
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 120px; /* space for fixed navbar */
 }
-
 /* Hero Content */
 .hero-content {
-  max-width: 600px;
+  max-width: 550px;
 }
 
 .hero-content h1 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   margin-bottom: 1rem;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
   color: #dddddd;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 /* Typing Animation Line */
 .learn-line {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #00aaff;
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -161,7 +160,7 @@ body, html {
 
 .hero-buttons a {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.65rem 1.4rem;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
@@ -179,9 +178,10 @@ body, html {
 
 /* Hero Image */
 .hero-image img {
-  width: 400px;
+  width: 360px;
   max-width: 100%;
 }
+
 
 /* Services Section */
 .services-section {
