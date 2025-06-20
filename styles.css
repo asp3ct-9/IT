@@ -430,3 +430,147 @@ body, html {
 .achievement:hover p {
   color: #00eaff;
 }
+
+
+/* ===================== RESPONSIVE STYLES ===================== */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+  }
+
+  .cta {
+    margin-top: 0.8rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 80px 1rem 2rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p,
+  .learn-line {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-text {
+    padding: 0;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  .achievement-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+  }
+
+  .service-card {
+    width: 140px;
+    height: 200px;
+    padding: 20px 10px;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile - very small devices */
+@media (max-width: 480px) {
+  .logo-name, .logo-tech {
+    font-size: 1.2rem;
+  }
+
+  .tagline {
+    font-size: 0.7rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p,
+  .learn-line {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary, .btn-talk {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .services-section h2,
+  .about-section h2,
+  .achievements-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .achievement {
+    width: 120px;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle svg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle .number {
+    font-size: 1rem;
+  }
+
+  .achievement p {
+    font-size: 0.85rem;
+  }
+}
